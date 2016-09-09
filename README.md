@@ -3,6 +3,7 @@
 Specify service keys in `settings.json`, then `import` this package into your top level on the server.
 Inspired by https://themeteorchef.com/recipes/roll-your-own-authentication/
 You must do this before using any of these OAuth logins, this package lets you do without cluttering up your source.
+
 ### Example
 
 ```
@@ -28,10 +29,6 @@ You must do this before using any of these OAuth logins, this package lets you d
     }
   }
 }
-
-//server, main.js
-
-import "meteor/streemo:configure-services";
-
-//now, all services will be (re)configured, and ready to go. 
 ```
+
+The appropriate service initialization code is injected into the server upon installation of the package, so there's nothing else you need to do.
